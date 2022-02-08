@@ -1,0 +1,77 @@
+name: SimpleTpa
+version: 5.7
+main: me.mulemuledupe.simpletpa.SimpleTpa
+authors: [ MuleMuleDupe ]
+description: A simple tpa plugin which sends requests
+website: https://www.spigotmc.org/resources/simple-tpa.64270/
+
+commands:
+  back:
+    description: Teleports you to the previous location.
+    permission: simpletpa.back
+  simpletpa:
+    description: Opens the help menu of the plugin.
+    permission: simpletpa.simpletpa
+  tpatoggle:
+    description: Turns on and off the teleportation mode.
+    permission: simpletpa.tpatoggle
+  tpa:
+    description: Sends a teleportation request to someone.
+    permission: simpletpa.tpa
+  tpahere:
+    description: Sends a teleport here request to someone.
+    permission: simpletpa.tpahere
+  tpaccept:
+    description: Accepts the teleportation request.
+    permission: simpletpa.tpaccept
+    aliases: [tpyes, accept]
+  tpdeny:
+    description: Denies the teleportation request.
+    permission: simpletpa.tpdeny
+    aliases: [tpno, deny]
+  tpcancel:
+    description: Cacenls the teleportation request.
+    permission: simpletpa.tpcancel
+  tpahereall:
+    description: Sends a teleport request to everyone
+    permission: simpletpa.tpahereall
+permissions:
+  simpletpa.bypasscooldown:
+    default: op
+    description: Allows you to bypass the cooldown
+  simpletpa.simpletpa:
+    default: true
+    description: Allows you to use /simpletpa
+  simpletpa.tpahereall:
+     description: Allows you to use /tpahereall
+     default: op
+  simpletpa.tpatoggle.others:
+    description: Allows you to toggle others tpa
+    default: op
+  simpletpa.tpaccept:
+    description: Allows you to use /tpaccept command.
+    default: true
+  simpletpa.tpdeny:
+    description: Allows you to use /tpdeny command.
+    default: true
+  simpletpa.tpcancel:
+    description: Allows you to use /tpcancel command.
+    default: true
+  simpletpa.tpahere:
+    description: Allows you to use /tpahere command.
+    default: true
+  simpletpa.back:
+    description: Allows you to use /back command.
+    default: true
+  simpletpa.back.others:
+    description: Allows you to teleport other people to their previous location.
+    default: op
+  simpletpa.reload:
+    description: Allows you to use /simpletpa reload command.
+    default: op
+  simpletpa.tpatoggle:
+    description: Allows you to use /tpatoggle command.
+    default: true
+  simpletpa.tpa:
+    description: Allows you to use /tpa command.
+    default: true
